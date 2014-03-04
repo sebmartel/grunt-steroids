@@ -19,7 +19,7 @@ module.exports = (grunt)->
             {
               expand: true
               cwd: 'www/'
-              src: ['**/*.scss', '**/*.sass']
+              src: ['**/*.scss', '**/*.sass', '!components/**/*.scss', '!components/**/*.sass']
               dest: 'dist/'
               ext: '.css'
             }
